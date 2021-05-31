@@ -1,0 +1,13 @@
+apiVersion: v2
+name: registry-operator
+description: A Helm chart for the Registry Operator
+home: https://github.com/astrokube/charts/tree/master/charts/registry-operator
+keywords:
+  - operator
+  - registry
+maintainers:
+  - email: charts@astrokube.com
+    name: AstroKube
+type: application
+version: 0.1.0
+appVersion: "0.7.1"

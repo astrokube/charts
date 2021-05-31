@@ -1,0 +1,27 @@
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+metadata:
+  annotations:
+    cert-manager.io/inject-ca-from: {{ .Release.Namespace }}/{{ include "registry-operator.fullname" . }}
+  name: {{ include "registry-operator.fullname" . }}
+webhooks:
+- admissionReviewVersions:
+  - v1
+  clientConfig:
+    service:
+      name: {{ include "registry-operator.fullname" . }}
+      namespace: {{ .Release.Namespace }}
+      path: /mutate-pod
+  failurePolicy: Ignore
+  name: mutate-pod.registry.astrokube.io
+  rules:
+  - apiGroups:
+    - ""
+    apiVersions:
+    - v1
+    operations:
+    - CREATE
+    - UPDATE
+    resources:
+    - pods
+  sideEffects: None

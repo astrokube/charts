@@ -9,5 +9,5 @@ maintainers:
   - email: charts@astrokube.com
     name: AstroKube
 type: application
-version: 0.2.1
-appVersion: "1.0.0"
+version: 0.2.2
+appVersion: "1.0.1"

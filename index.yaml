@@ -2,6 +2,23 @@ apiVersion: v1
 entries:
   registry-operator:
   - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2021-08-03T15:14:03.249041938Z"
+    description: A Helm chart for the Registry Operator
+    digest: b36c9cb841bf4df4e80e5130b8e75895d467797872a04ecf86ddeeedbd6333cc
+    home: https://github.com/astrokube/charts/tree/master/charts/registry-operator
+    keywords:
+    - operator
+    - registry
+    maintainers:
+    - email: charts@astrokube.com
+      name: AstroKube
+    name: registry-operator
+    type: application
+    urls:
+    - https://github.com/astrokube/charts/releases/download/registry-operator-0.2.2/registry-operator-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
     appVersion: 1.0.0
     created: "2021-07-22T09:14:34.370441888Z"
     description: A Helm chart for the Registry Operator
@@ -52,4 +69,4 @@ entries:
     urls:
     - https://github.com/astrokube/charts/releases/download/registry-operator-0.1.1/registry-operator-0.1.1.tgz
     version: 0.1.1
-generated: "2021-07-22T09:14:34.370454188Z"
+generated: "2021-08-03T15:14:03.249382352Z"
